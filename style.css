@@ -1,0 +1,108 @@
+html{
+    font-family: "Bricolage Grotesque", sans-serif;
+    margin: 6px;
+    transition: 0.3s ease;
+}
+body{
+    margin: 7px;
+    padding: 0px;
+    
+}
+
+#nav{
+    margin-left: 0px;
+    left:0px;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    align-items: center;
+    
+}
+#nav ul {
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+    padding-left: 0px;
+
+}
+#nav li{
+    
+    
+    list-style-type: none;
+    
+
+}
+#active{
+    background-color: #fb54078e;
+    color: #fefae0;
+    margin: 4px;
+    text-decoration: none;
+    
+    left: 0px;
+    font-size:20px;
+    padding: 10px;
+    border-radius: 3px;
+    
+}
+#nav a:not(#active){
+    margin: 4px;
+    text-decoration: none;
+    color: #fb5607;
+    left: 0px;
+    font-size:20px;
+    padding: 10px;
+    border-radius: 3px;
+    
+}
+#search {
+    
+    text-decoration: none;
+    color: #fb5607;
+    right: 0px;
+    display: inline;
+    
+    margin-left: 1000px;
+    align-items: right ;
+    font-size:30px;
+    margin-top: 0px ;
+    
+    border-radius: 3px;
+    
+}
+#nav a:hover{
+    color: black;
+    background-color: #fefae0;
+}
+#search:hover{
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#fac{
+    display: none;
+}
+#fac ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    align-items: center;
+    margin-left: 100px;
+    
+    
+}
+ul .fac-but{
+    width: 140px;
+    align-items: center;
+}
+#fac li{
+    padding:10px;
+    width: 140px;
+    align-items: center;
+    background-color: #fb5607;
+    margin: 3px;
+    
+}
+.fac-but:hover #fac{
+    display: block;
+}
