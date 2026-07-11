@@ -1,10 +1,10 @@
 html{
     font-family: "Bricolage Grotesque", sans-serif;
-    margin: 6px;
+    
     transition: 0.3s ease;
 }
 body{
-    margin: 7px;
+    
     padding: 0px;
     
 }
@@ -13,16 +13,23 @@ body{
     margin-left: 0px;
     left:0px;
     position: fixed;
-    backdrop-filter: blur(10px);
-    transition: 0.3s ease;
-    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
     
 }
 #nav ul {
+    top: 0;
     display: flex;
     margin: 0px;
     flex-direction: row;
     padding-left: 0px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    align-items: center;
+    height: 44px;
+    padding-top: 5px;
 
 }
 #nav li{
@@ -44,7 +51,7 @@ body{
     border-radius: 3px;
     
 }
-#nav a:not(#active){
+#nav a:not(#active,#fac){
     margin: 4px;
     text-decoration: none;
     color: #fb5607;
@@ -61,7 +68,7 @@ body{
     right: 0px;
     display: inline;
     
-    margin-left: 1000px;
+    margin-left: 980;
     align-items: right ;
     font-size:30px;
     margin-top: 0px ;
@@ -69,40 +76,122 @@ body{
     border-radius: 3px;
     
 }
-#nav a:hover{
+#nav > li > a:hover {
     color: black;
-    background-color: #fefae0;
+   
+}
+#nav li:hover{
+    color: black;
+
 }
 #search:hover{
     color: black;
     cursor: pointer;
     transition: 0.3s ease;
 }
-#fac{
+
+#fac {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 80;
+    width: 200px;
+   
+    border-radius: 6px;
+    padding: 3px 0;
+    
+    
+    z-index: 9999;
 }
-#fac ul{
+
+#fac ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    width: 140px;
     align-items: center;
-    margin-left: 100px;
-    
-    
+    width: 100%;
 }
-ul .fac-but{
-    width: 140px;
-    align-items: center;
-}
-#fac li{
-    padding:10px;
-    width: 140px;
-    align-items: center;
+
+#fac li {
+    width: 85%;
+    padding: 5px;
+    margin:  0;
     background-color: #fb5607;
-    margin: 3px;
-    
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.3s;
 }
-.fac-but:hover #fac{
+
+#fac li a {
+    color: #fefae0 !important;
+    text-decoration: none;
     display: block;
+}
+
+#fac li:hover {
+    padding-left: 20px;
+    background-color: #ff7433;
+}
+
+.fac-but:hover #fac {
+    display: block;
+}
+#fac ul:hover #fac{
+    display: block;
+}
+
+
+
+
+
+
+#nav > .fac-but{
+    width: 240px;
+    align-items: center;
+    position: relative;
+}
+
+
+.cont {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Crucial: hides the duplicated images waiting off-screen */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    margin-top: 100px; /* Replaced 'top: 60px' with margin since it's a static container */
+}
+
+#gallery {
+    display: flex;
+    width: max-content; /* CRUCIAL: Forces the container to stretch as wide as the images need */
+    height: 450px;
+    align-items: center;
+    
+    /* Changed animation time to 15s. 2s is blindingly fast for a full cycle! */
+    animation: scrollGallery 20s linear infinite; 
+}
+
+#gallery:hover {
+    animation-play-state: paused;
+}
+
+#gallery img {
+    width: 450px; 
+    height: 400px; 
+    object-fit: cover; 
+    padding: 5px; 
+    flex-shrink: 0; /* CRUCIAL: Prevents the browser from squishing your images to fit the screen */
+    border-radius: 8px; /* Optional: rounds image corners cleanly */
+}
+
+@keyframes scrollGallery {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        
+        transform: translateX(-50%); 
+    }
 }
