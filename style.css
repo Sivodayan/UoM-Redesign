@@ -13,14 +13,17 @@ body{
     margin-left: 0px;
     left:0px;
     position: fixed;
-    top: 0;
+    top: 10;
     width: 100%;
     z-index: 1000;
     
     
+    
 }
+
 #nav ul {
     top: 0;
+    height: 400px;
     display: flex;
     margin: 0px;
     flex-direction: row;
@@ -39,14 +42,14 @@ body{
     
 
 }
-#active{
-    background-color: #fb54078e;
-    color: #fefae0;
+#active img{
+    width: 80;
+ 
+    height: 80;
     margin: 4px;
-    text-decoration: none;
-    
+    margin-top:40 ;
     left: 0px;
-    font-size:20px;
+    
     padding: 10px;
     border-radius: 3px;
     
@@ -61,21 +64,7 @@ body{
     border-radius: 3px;
     
 }
-#search {
-    
-    text-decoration: none;
-    color: #fb5607;
-    right: 0px;
-    display: inline;
-    
-    margin-left: 980;
-    align-items: right ;
-    font-size:30px;
-    margin-top: 0px ;
-    
-    border-radius: 3px;
-    
-}
+
 #nav > li > a:hover {
     color: black;
    
@@ -84,12 +73,60 @@ body{
     color: black;
 
 }
+
+#name{
+    margin-top:5;
+    position: relative;
+    display: inline;
+    width: 400px;
+    height: 30px;
+    margin-left: 500px;
+    justify-content: center;
+    white-space: nowrap
+    
+}
+
+
+#search {
+    
+    text-decoration: none;
+    color: #fb5607;
+    right: 0px;
+    display: inline;
+    
+    margin-left: 80;
+    align-items: right ;
+    font-size:30px;
+    margin-top: 0px ;
+    margin-right: 5px;
+    border-radius: 3px;
+    
+}
+
 #search:hover{
     color: black;
     cursor: pointer;
     transition: 0.3s ease;
+    
 }
 
+#s-bar {
+    display: none; /* Keeps it hidden until you click the search icon */
+    padding: 6px 12px;
+    font-size: 16px;
+    border: 1px solid #fb5607;
+    border-radius: 4px;
+    outline: none;
+    margin-left: 10px;
+    width: 300px;
+}
+#s-bar:focus{
+    border: #c4ac11 solid;
+    outline: none;
+}
+#s-bar:focus #search{
+    color: #c4ac11 !important;
+}
 #fac {
     display: none;
     position: absolute;
@@ -195,3 +232,26 @@ body{
         transform: translateX(-50%); 
     }
 }
+
+.title{
+    color: #d7be1a ;
+    font-size: 100px ;
+}
+
+.text{
+    color: #d7be1a ;
+    margin-top: 5px;
+
+    font-size: 40px ;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -9,12 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body >
 <script src="script.js"></script>
 <div id="nav">  
+    
     <ul id="main-nav">
-        
-        <li><a href="#home" id="active">Home</a></li>
+        <a href="#home" id="active"><img src="logo.png" alt="logo"></a>
+        <li></li>
         <li class="fac-but"><a href="#faculties">Faculties</a>
         <div id="fac">
         <ul>
@@ -31,9 +32,11 @@
         <li><a href="#people">People</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li>  <span class="material-symbols-outlined" id="search">
+        <h1 id="name">University of Moratuwa</h1>
+        <li>  <span class="material-symbols-outlined" id="search" onclick="show()">
 search
 </span></li>
+<input type="search" id="s-bar" >
     </ul>
     
 </div>
@@ -65,7 +68,10 @@ search
 
 
 
-
+<div id="#faculties">
+    <h1 class="title">Faculties</h1>
+    <p class="text">We have the best faculties in the world</p>
+</div>
 
 
 
