@@ -5,7 +5,7 @@ function show() {
     document.getElementById('s-bar').style.transition = '0.3s ease';
     document.getElementById('search').style.transition = '0.3s ease';
     // 2. Correct syntax to update margin and added the 'px' unit
-    document.getElementById('search').style.marginLeft = '680px';
+    document.getElementById('search').style.right = '340px';
 }
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function() {
             if (e.key === 'Enter') {
                 e.preventDefault(); // Prevents the page from refreshing automatically
                 searchBar.style.display = 'none';
-                searchIcon.style.marginLeft = '80';
+                searchIcon.style.right = '20';
                 document.getElementById('name').style.display = 'block';
                 searchIcon.style.transition='0.3s ease'
                 
