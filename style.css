@@ -18,7 +18,7 @@ body{
     padding-top: 10px;
     width: 100%;
     z-index: 1000;
-    height: 100px;
+    height: 90px;
     backdrop-filter: blur(10px);
     
 }
@@ -38,7 +38,7 @@ body{
 
 }
 #nav li{
-    
+   
     margin-top: 30;
     list-style-type: none;
     
@@ -56,7 +56,28 @@ body{
     border-radius: 3px;
     
 }
-#nav a:not(#active,#fac){
+#active{
+    place-items: center;
+    display: flex;
+    
+}
+#name{
+   
+    
+    margin-top: 70px;
+    font-size: 60;
+    
+    display: inline;
+    width: 800px;
+    
+    
+    margin-right: 100;
+    
+
+    
+}
+
+#nav a{
     margin: 4px;
     
     text-decoration: none;
@@ -68,27 +89,18 @@ body{
     
 }
 
-#nav > li > a:hover {
+#nav  a:hover {
     color: black;
+    transition:0.5s ease;
+    
    
 }
 #nav li:hover{
     color: black;
+    transition:0.3s ease;
 
 }
 
-#name{
-    margin-top:30;
-    font-size: 60;
-    position: relative;
-    display: inline;
-    width: 400px;
-    height: 30px;
-    margin-left: 250px;
-    justify-content: center;
-    white-space: nowrap
-    
-}
 
 
 #search {
@@ -117,14 +129,14 @@ body{
 #s-bar {
     display: none; /* Keeps it hidden until you click the search icon */
     padding: 6px 12px;
-    height: 40px;
+    height: 50px;
     font-size: 16px;
     border: 1px outset #fb5607;
-    border-radius: 4px;
+    border-radius: 40px;
     outline: none;
     margin-top: 25px ;
-    margin-left: 700px;
-    width: 300px;
+    margin-left: 580px;
+    width: 400px;
 }
 #s-bar:focus{
     border: #c4ac11 outset;
@@ -142,8 +154,7 @@ body{
     margin-top: -35;
     border-radius: 6px;
     padding: 3px 0;
-    
-    
+
     z-index: 9999;
 }
 
@@ -155,13 +166,15 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 3px;
+    margin-left: 910px;
 }
 
 #fac li {
     width: 85%;
     padding: 5px;
     margin:  0;
-    background-color: #fb5607;
+    background-color: #fb5407ca;
     border-radius: 6px;
     text-align: center;
     transition: 0.3s;
@@ -309,8 +322,8 @@ body{
     color: #333;    
 }
 
-#people{
-    margin-top: 20px;
+#people,#about{
+    scroll-margin-top: 100px;
 }
 #staff-gallery {
     display: flex;
@@ -392,42 +405,131 @@ body{
     background-color: #fb5607;
     width: 100%;
     margin: 0;
+    margin-bottom: 0;
     
 }
-#contact h1{
-    margin-bottom: 30px;
+/* Main section container */
+
+#contact h1 {
+    text-align: center;
+    
+    margin-bottom: 40px;
+    margin-left: 10px;
 }
-#contact a{
+
+/* Wrapper to layout links and push icons to the right */
+
+
+/* Two-column layout container for links */
+#link {
+    display: flex;
+    gap: 160px; /* Space between the two columns */
+    flex-grow: 2;
+    margin-left: 70px; /* Centers the columns in the middle */
+}
+
+/* Individual columns configuration */
+#link .column {
+    display: flex;
+    flex-direction: column;
+    
+    min-width: 250px;
+    margin-left: 100px; 
+
+}
+
+#contact h2 {
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+   
+}
+
+/* Links Styling */
+#contact a {
     text-decoration: none;
     color: #fefae0;
+    padding: 8px;
+    
     display: block;
-    width: 400px;
+    width: 100%;
+    transition: opacity 0.2s;
+}
+
+#contact a:hover {
+    opacity: 0.8;
+}
+
+#nl h2{
+    position: absolute;
+    bottom: -3215px;
+    right: 510;
+}
+#nl h3{
+    position: absolute;
+    bottom: -3320px;
+    left: 900;
+    color: #f30808;
+}
+#mail{
+    
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: -3270px;
+    right: 140;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #33333342;
+    width: 500px;
+    outline: none;
+    border: 1px #d7be1a solid;
     padding: 10px;
-    text-align: center;
-    margin: 0;
-
 }
-#contact h2{
-    text-align: center;
-    justify-content: center;
-}
-#link{
-    columns: 3;
-    
-}
-#link div{
-   
-    width: 400px;
-    
-    justify-content: center;
-    text-align: center;
-    
-
-
-}
-
-#o{
-    height: 300px;
+#but{
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: -3270px;
+    right: 30;
+    font-size: 20px;
+  
+    border-radius: 5px;
+    background-color: #1e11d5b7;
     width: 100px;
-    align-items: center;
+    outline: none;
+    border: none;
+    padding: 11px;
+    color: aquamarine;
+}
+#but:hover{
+    background-color: #d7be1a;
+    color: #fefae0;
+    box-shadow: 0 10px 20px 0 rgba(17, 17, 17, 0.3);
+    transition: 0.3s ease ;
+    cursor: pointer;
+}
+/* Social Icons Container pushed to the right end */
+#social-icons {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: -3520px;
+    right: 30;
+    font-size: 25px; /* Adjust alignment from the bottom edge */
+}
+
+
+/* Individual Social Icon style overrides */
+#social-icons a {
+    width: auto; 
+    padding: 0;
+    color: #000; /* Black icons matching your image */
+    size: 24px;
+}
+#footer{
+    align-items: right;
+    right: 20;
+    bottom: -3570;
+    margin: 0;
+    position: absolute;
 }
