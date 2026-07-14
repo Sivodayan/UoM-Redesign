@@ -8,6 +8,67 @@ body{
     padding: 0px;
     
 }
+/* Dark background covering the full screen */
+#login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); /* Semitransparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999; /* Ensures it sits on top of all other elements */
+}
+
+/* The prompt box container */
+.login-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 320px;
+
+    color: #fb5607;
+    font-family: Arial, sans-serif;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #fb5607;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login-btn:hover {
+    background-color: #d7be1a;
+}
 
 #nav{
     margin-left: 0px;
@@ -193,9 +254,11 @@ body{
 
 .fac-but:hover #fac {
     display: block;
+    transition: 0.9s ease;
 }
 #fac ul:hover #fac{
     display: block;
+    transition: 0.9s ease;
 }
 
 
@@ -325,6 +388,7 @@ body{
 #people,#about{
     scroll-margin-top: 100px;
 }
+
 #staff-gallery {
     display: flex;
     flex-wrap: wrap;       /* Allows cards to wrap to the next line naturally */
@@ -342,9 +406,9 @@ body{
 }
 
 .staff-card img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
+    width: 300px;
+    height: 360px;
+    object-fit:fill;
     object-position: right;
     border-radius: 100px;
     padding: 10px;
@@ -367,7 +431,17 @@ body{
     margin-top: 0;
 }
 
-
+#people #all{
+    text-decoration: none;
+    color: #fb5607;
+    text-align: center;
+    display: inline;
+    margin-block-start: 100px;
+}
+#people #all:hover{
+    color: black;
+    transition: 0.3s ease;
+}
 #about h1{
     margin-left: 310px;
 }
@@ -392,7 +466,7 @@ body{
    
     position: absolute;
     /*align-items: center;*/
-    top: 406%;
+    top: 431%;
     left: 58%;
     margin-right: 0;
     width: 600px;
@@ -462,12 +536,12 @@ body{
 
 #nl h2{
     position: absolute;
-    bottom: -3215px;
+    bottom: -3390px;
     right: 510;
 }
 #nl h3{
     position: absolute;
-    bottom: -3320px;
+    bottom: -3500px;
     left: 900;
     color: #f30808;
 }
@@ -475,7 +549,7 @@ body{
     
     padding-bottom: 10px;
     position: absolute;
-    bottom: -3270px;
+    bottom: -3450px;
     right: 140;
     font-size: 20px;
     border-radius: 5px;
@@ -488,7 +562,7 @@ body{
 #but{
     padding-bottom: 10px;
     position: absolute;
-    bottom: -3270px;
+    bottom: -3450px;
     right: 30;
     font-size: 20px;
   
@@ -513,7 +587,7 @@ body{
     gap: 12px;
     padding-bottom: 10px;
     position: absolute;
-    bottom: -3520px;
+    bottom: -3700px;
     right: 30;
     font-size: 25px; /* Adjust alignment from the bottom edge */
 }
@@ -529,7 +603,7 @@ body{
 #footer{
     align-items: right;
     right: 20;
-    bottom: -3570;
+    bottom: -3740;
     margin: 0;
     position: absolute;
 }
