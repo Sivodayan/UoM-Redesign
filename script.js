@@ -120,3 +120,33 @@ function validateForm() {
         return false;
     }
 }
+window.addEventListener('DOMContentLoaded', function () {
+    // --- MOBILE DETECTION GATEWAY ---
+    var isMobileAgent = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    var isSmallScreen = window.innerWidth <= 768; // Standard mobile/tablet breakpoint
+
+    if (isMobileAgent || isSmallScreen) {
+        // 1. Lock scroll on mobile error screen
+        document.body.style.overflow = 'hidden';
+        
+        // 2. Overwrite the HTML body with an error page structure
+        document.body.innerHTML = `
+            <div id="mobile-error-screen">
+                <div class="error-container">
+                    <center><div class="error-icon" style='margin-top:400px;'>📱❌</div>
+                    <h1>Desktop Only</h1>
+                    <p>This system is optimized for desktop viewports. Access is restricted on mobile devices and tablets.</p>
+                    <small>Please switch to a laptop or computer monitor to continue.</small></center>
+                </div>
+            </div>
+        `;
+        
+        // Stop the rest of the script from executing since it's a mobile device
+        return; 
+    }
+
+    // --- YOUR EXISTING PASSWORD/SEARCH SCRIPT CONTINUES BELOW ---
+    var loginBtn = document.getElementById('login-btn');
+    var overlay = document.getElementById('login-overlay');
+    // ... the rest of your original script ...
+});
