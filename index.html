@@ -12,7 +12,27 @@
 <body >
 
 <script src="https://kit.fontawesome.com/07d9fbb6b4.js" crossorigin="anonymous"></script>
-
+<!-- The blocking overlay window -->
+<div id="login-overlay">
+    <div class="login-box">
+        <h2>Restricted Access</h2>
+        <p>Please log in to view this website.</p>
+        
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+        </div>
+        
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+        </div>
+        
+        <p id="error-msg" style="color: red; display: none;">Invalid credentials. Try again.</p>
+        
+        <button id="login-btn">Submit</button>
+    </div>
+</div>
 <div id="home">
 <div id="nav">  
     

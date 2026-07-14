@@ -68,6 +68,7 @@ body{
 
 #login-btn:hover {
     background-color: #d7be1a;
+    transition: 0.3s ease;
 }
 
 #nav{

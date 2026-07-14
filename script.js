@@ -44,14 +44,6 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
-
-
-
-
-
 function show() {
     // 1. Correct syntax to change styles and fix the 'display' typo
     document.getElementById('s-bar').style.display = 'block';
