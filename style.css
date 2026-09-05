@@ -4,73 +4,8 @@ html{
     
 }
 body{
-    
-    padding: 0px;
-    
+    padding:5
 }
-/* Dark background covering the full screen */
-#login-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85); /* Semitransparent black */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999999; /* Ensures it sits on top of all other elements */
-}
-
-/* The prompt box container */
-.login-box {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    width: 320px;
-
-    color: #fb5607;
-    font-family: Arial, sans-serif;
-}
-
-.input-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#login-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #fb5607;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#login-btn:hover {
-    background-color: #d7be1a;
-    transition: 0.3s ease;
-}
-
 #nav{
     margin-left: 0px;
     left:0px;
