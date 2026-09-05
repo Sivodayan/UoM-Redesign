@@ -1,10 +1,10 @@
-window.addEventListener('DOMContentLoaded', function () {
+opmoowindow.addEventListener('DOMContentLoaded', function () {
     var loginBtn = document.getElementById('login-btn');
     var overlay = document.getElementById('login-overlay');
     var usernameInput = document.getElementById('username');
     var passwordInput = document.getElementById('password');
     var errorMsg = document.getElementById('error-msg');
-
+/*
     // --- 1. BLOCK SCROLLING IMMEDIATELY ON LOAD ---
     if (overlay && overlay.style.display !== 'none') {
         document.body.style.overflow = 'hidden';
@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
+*/
 function show() {
     // 1. Correct syntax to change styles and fix the 'display' typo
     document.getElementById('s-bar').style.display = 'block';
