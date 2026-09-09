@@ -1,9 +1,9 @@
-opmoowindow.addEventListener('DOMContentLoaded', function () {
-    var loginBtn = document.getElementById('login-btn');
-    var overlay = document.getElementById('login-overlay');
-    var usernameInput = document.getElementById('username');
-    var passwordInput = document.getElementById('password');
-    var errorMsg = document.getElementById('error-msg');
+// opmoowindow.addEventListener('DOMContentLoaded', function () {
+//     var loginBtn = document.getElementById('login-btn');
+//     var overlay = document.getElementById('login-overlay');
+//     var usernameInput = document.getElementById('username');
+//     var passwordInput = document.getElementById('password');
+//     var errorMsg = document.getElementById('error-msg');
 /*
     // --- 1. BLOCK SCROLLING IMMEDIATELY ON LOAD ---
     if (overlay && overlay.style.display !== 'none') {
