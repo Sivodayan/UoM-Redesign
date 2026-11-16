@@ -1,230 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University of Moratuwa</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-    
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/07d9fbb6b4.js" crossorigin="anonymous"></script>
 </head>
-<body >
+<body>
+    <div id="home">
+        <header id="nav">
+            <div class="nav-wrapper">
+                <a href="index.html" id="active">
+                    <img src="assets/images/logo.png" alt="University of Moratuwa Logo">
+                    <h1 id="name">University of Moratuwa</h1>
+                </a>
 
-<script src="https://kit.fontawesome.com/07d9fbb6b4.js" crossorigin="anonymous"></script>
-<!-- The blocking overlay window -->
-        
-        
-        
-<div id="home">
-<div id="nav">  
-    
-    <ul id="main-nav">
-        <a href="index.html" id="active"><img src="logo.png" alt="logo">
-        <h1 id="name">University of Moratuwa</h1></a>
-        <li></li>
-        <li class="fac-but"><a href="#faculties">Faculties</a>
-        <div id="fac">
-        <ul>
-           
-            <li><a href="https://uom.lk/efac">Engineering</a></li>
-            <li><a href="https://uom.lk/foa">Architecture</a></li>
-            <li><a href="https://uom.lk/buisness">Buisness</a></li>
-            <li><a href="https://uom.lk/medicine">Medicine</a></li>
-            <li><a href="https://uom.lk/itfac">Information Technology</a></li>
-            <li><a href="https://uom.lk/fgs">Graduate Sudies</a></li>
-        </ul>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-    </div></li>
-        <li><a href="#people">People</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        
-        <li>  <span class="material-symbols-outlined" id="search" onclick="show()">
-search
-</span></li>
-<input type="search" id="s-bar" >
-    </ul>
+                <div class="nav-links-wrap" id="nav-menu">
+                    <ul id="main-nav">
+                        <li class="fac-but">
+                            <a href="#faculties" id="fac-btn">Faculties <i class="fa-solid fa-chevron-down fac-icon"></i></a>
+                            <div id="fac">
+                                <ul>
+                                    <li><a href="https://uom.lk/efac">Engineering</a></li>
+                                    <li><a href="https://uom.lk/foa">Architecture</a></li>
+                                    <li><a href="https://uom.lk/buisness">Buisness</a></li>
+                                    <li><a href="https://uom.lk/medicine">Medicine</a></li>
+                                    <li><a href="https://uom.lk/itfac">Information Technology</a></li>
+                                    <li><a href="https://uom.lk/fgs">Graduate Sudies</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#people">People</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <div class="search-container">
+                        <input type="search" id="s-bar" placeholder="Search...">
+                        <span class="material-symbols-outlined" id="search" onclick="show()">search</span>
+                    </div>
+                </div>
+            </div>
+        </header>
     </div>
-</div>
-<div class="cont">
-<div id="gallery">
-    
-    
-    <img src="6.jpg" alt="1">
-    <img src="7.jpg" alt="1">
-    <img src="8.jpg" alt="1">
-    <img src="9.jpg" alt="1">
-    <img src="10.jpg" alt="1">
-    <img src="11.jpg" alt="1">
-    <img src="12.jpg" alt="1">
-    <img src="13.jpg" alt="1">
-    <img src="14.jpg" alt="1">
 
-    <img src="6.jpg" alt="1">
-    <img src="7.jpg" alt="1">
-    <img src="8.jpg" alt="1">
-    <img src="9.jpg" alt="1">
-    <img src="10.jpg" alt="1">
-    <img src="11.jpg" alt="1">
-    <img src="12.jpg" alt="1">
-    <img src="13.jpg" alt="1">
-    <img src="14.jpg" alt="1">
-</div>
-</div>
+    <div class="cont">
+        <div id="gallery">
+            <img src="assets/images/6.jpg" alt="1">
+            <img src="assets/images/7.jpg" alt="2">
+            <img src="assets/images/8.jpg" alt="3">
+            <img src="assets/images/9.jpg" alt="4">
+            <img src="assets/images/10.jpg" alt="5">
+            <img src="assets/images/11.jpg" alt="6">
+            <img src="assets/images/12.jpg" alt="7">
+            <img src="assets/images/13.jpg" alt="8">
+            <img src="assets/images/14.jpg" alt="9">
 
-
-
-<div id="faculties">
-    <br>
-    <h1 class="title">Faculties</h1>
-    <p class="text">We have the best faculties in Srilanka</p>
-    <div class="fac-container">
-        <div class="fac-card">
-            <a href="https://uom.lk/efac">
-        <img src="1_engineering.svg" alt="1">
-        <p>Engineering</p></a>
+            <img src="assets/images/6.jpg" alt="1">
+            <img src="assets/images/7.jpg" alt="2">
+            <img src="assets/images/8.jpg" alt="3">
+            <img src="assets/images/9.jpg" alt="4">
+            <img src="assets/images/10.jpg" alt="5">
+            <img src="assets/images/11.jpg" alt="6">
+            <img src="assets/images/12.jpg" alt="7">
+            <img src="assets/images/13.jpg" alt="8">
+            <img src="assets/images/14.jpg" alt="9">
         </div>
-        <div class="fac-card">
-            <a href="https://uom.lk/foa">
-        <img src="2_architecture.svg" alt="2">
-        <p>Architecture</p></div></a>
-        
-        <div class="fac-card">
-            <a href="https://uom.lk/business">
-        <img src="3_business.svg" alt="2">
-        <p>Buisness</p></div></a>
-        <div class="fac-card">
-            <a href="https://uom.lk/medicine">
-        <img src="4_medicine.svg" alt="2">
-        <p>Medicine</p></div></a>
-        <div class="fac-card">
-            <a href="https://uom.lk/itfac">
-        <img src="5_information_technology.svg" alt="2">
-        <p>Information Technogy</p></div></a>
-        <div class="fac-card">
-            <a href="https://uom.lk/fgs">
-        <img src="6_graduate_studies.svg" alt="2">
-        <p>Graduate studies</p></div></a>
-
     </div>
-</div>
-<br>
-<br>
-<div id="people">
-<h1 class="title">
-    People
-</h1>
-<p class="text">Get to know our well reputated Staff</p>
-    <div id="staff-gallery">
-    <div class="staff-card">
-        <a href="https://uom.lk/staff/Gunawardena.ND">
-    <img src="pr1.jpg" alt="1">
-    <p>Sen Prof. N.D. Gunawardena</p>
-    <p class="post">Vice Chancellor</p>
-    
-    </div></a>
-    <div class="staff-card">
-        <a href="https://uom.lk/staffs/prof-mrs-d-dias">
-    <img src="pr2.jpg" alt="">
-<p>Prof. (Mrs) Dileeka Dias</p>
-<p class="post">Deputy Vice Chancellor</p>
-</div></a>
-    
-    <div class="staff-card">
-         <a href="https://uom.lk/staffs/mr-dld-jayantha">
-    <img src="pr3.jpg" alt="">
-<p>Mr. D.L.D. Jayantha</p>
- <p class="post">Registrar</p>
-</div></a>
 
-    <div class="staff-card">
-        <a href="https://uom.lk/staff1/dr-yg-sandanayake">
-    <img src="pr4.jpg" alt="">
-<p>Prof.(Ms) Y.G. Sandanayake</p>
-<p class="post">Dean, Faculty of Architecture</p>
-</div></a>
+    <section id="faculties">
+        <h1 class="title">Faculties</h1>
+        <p class="text">We have the best faculties in Srilanka</p>
+        <div class="fac-container">
+            <div class="fac-card">
+                <a href="https://uom.lk/efac">
+                    <img src="assets/images/1_engineering.svg" alt="Engineering">
+                    <p>Engineering</p>
+                </a>
+            </div>
+            <div class="fac-card">
+                <a href="https://uom.lk/foa">
+                    <img src="assets/images/2_architecture.svg" alt="Architecture">
+                    <p>Architecture</p>
+                </a>
+            </div>
+            <div class="fac-card">
+                <a href="https://uom.lk/business">
+                    <img src="assets/images/3_business.svg" alt="Business">
+                    <p>Buisness</p>
+                </a>
+            </div>
+            <div class="fac-card">
+                <a href="https://uom.lk/medicine">
+                    <img src="assets/images/4_medicine.svg" alt="Medicine">
+                    <p>Medicine</p>
+                </a>
+            </div>
+            <div class="fac-card">
+                <a href="https://uom.lk/itfac">
+                    <img src="assets/images/5_information_technology.svg" alt="Information Technology">
+                    <p>Information Technogy</p>
+                </a>
+            </div>
+            <div class="fac-card">
+                <a href="https://uom.lk/fgs">
+                    <img src="assets/images/6_graduate_studies.svg" alt="Graduate studies">
+                    <p>Graduate studies</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <div class="staff-card">
-         <a href="https://uom.lk/staff/Manatunge.JMA">
-    <img src="pr5.png" alt="">
-<p>Prof.J.M.A. Manatunge</p>
-<p class="post">Dean, Faculty of Engineering</p></div></a><br>
-    
-</div>
-<a id="all" href="https://uom.lk/people"><h2>View all ></h2></a>
-</div>
+    <section id="people">
+        <h1 class="title">People</h1>
+        <p class="text">Get to know our well reputated Staff</p>
+        <div id="staff-gallery">
+            <div class="staff-card">
+                <a href="https://uom.lk/staff/Gunawardena.ND">
+                    <img src="assets/images/pr1.jpg" alt="Sen Prof. N.D. Gunawardena">
+                    <p>Sen Prof. N.D. Gunawardena</p>
+                    <p class="post">Vice Chancellor</p>
+                </a>
+            </div>
+            <div class="staff-card">
+                <a href="https://uom.lk/staffs/prof-mrs-d-dias">
+                    <img src="assets/images/pr2.jpg" alt="Prof. (Mrs) Dileeka Dias">
+                    <p>Prof. (Mrs) Dileeka Dias</p>
+                    <p class="post">Deputy Vice Chancellor</p>
+                </a>
+            </div>
+            <div class="staff-card">
+                <a href="https://uom.lk/staffs/mr-dld-jayantha">
+                    <img src="assets/images/pr3.jpg" alt="Mr. D.L.D. Jayantha">
+                    <p>Mr. D.L.D. Jayantha</p>
+                    <p class="post">Registrar</p>
+                </a>
+            </div>
+            <div class="staff-card">
+                <a href="https://uom.lk/staff1/dr-yg-sandanayake">
+                    <img src="assets/images/pr4.jpg" alt="Prof.(Ms) Y.G. Sandanayake">
+                    <p>Prof.(Ms) Y.G. Sandanayake</p>
+                    <p class="post">Dean, Faculty of Architecture</p>
+                </a>
+            </div>
+            <div class="staff-card">
+                <a href="https://uom.lk/staff/Manatunge.JMA">
+                    <img src="assets/images/pr5.png" alt="Prof.J.M.A. Manatunge">
+                    <p>Prof.J.M.A. Manatunge</p>
+                    <p class="post">Dean, Faculty of Engineering</p>
+                </a>
+            </div>
+        </div>
+        <a id="all" href="https://uom.lk/people"><h2>View all &gt;</h2></a>
+    </section>
 
-<div id="about">
-    <h1 class="title">About our University</h1>
-    <div class="about-text">
-    <p>The University of Moratuwa (UOM), the successor to the Institute of Practical Technology, Katubedda set up in 1960 and Ceylon College of Technology set up in 1966, commenced functioning as Katubedda Campus on 15th February 1972.</p>
-    <p>Under the provisions of Universities Act No. 16 of 1978, the Katubedda Campus of University of Sri Lanka acquired the status of an independent University with its present corporate name "The University of Moratuwa, Sri Lanka".</p>
-    <p>At present , the UOM consists of six faculties namely Architecture, Business, Engineering, Information Technology, Graduate Studies and Medicine with thirty six (36) academic departments offering fourteen (14) Bachelors degree programs to students selected by the University Grants Commission (UGC) and fifty six (56) postgraduate programs together with MSc, MPhil & PhD research based postgraduate degrees.</p>
-    <p>The University of Moratuwa has gained reputation as the overall best university in Sri Lanka today. In terms of education, the university strives to produce "world class graduates" in technological fields- who can gain admission easily to any postgraduate program of a reputed world class University and perform as good as any graduate from an internationally reputed University both in higher studies and practice. The overall goal of the UOM therefore, is to produce academically sound , self confident, flexible, highly employable, internationally recognized quality graduates who are readily employable soon after the graduation, and also to train our students to become "job creators" rather than "job seekers" when they graduate.</p>
-    <p>The university has set several goals in order to be an active player in the economic development of our country while contributing to making Sri Lanka a "Knowledge Hub" by strategic planning and implementing many initiatives.</p>
-    </div>
-<img src="gate.jpg" alt="gate">
-</div>
+    <section id="about">
+        <h1 class="title">About our University</h1>
+        <div class="about-container">
+            <div class="about-text">
+                <p>The University of Moratuwa (UOM), the successor to the Institute of Practical Technology, Katubedda set up in 1960 and Ceylon College of Technology set up in 1966, commenced functioning as Katubedda Campus on 15th February 1972.</p>
+                <p>Under the provisions of Universities Act No. 16 of 1978, the Katubedda Campus of University of Sri Lanka acquired the status of an independent University with its present corporate name "The University of Moratuwa, Sri Lanka".</p>
+                <p>At present , the UOM consists of six faculties namely Architecture, Business, Engineering, Information Technology, Graduate Studies and Medicine with thirty six (36) academic departments offering fourteen (14) Bachelors degree programs to students selected by the University Grants Commission (UGC) and fifty six (56) postgraduate programs together with MSc, MPhil &amp; PhD research based postgraduate degrees.</p>
+                <p>The University of Moratuwa has gained reputation as the overall best university in Sri Lanka today. In terms of education, the university strives to produce "world class graduates" in technological fields- who can gain admission easily to any postgraduate program of a reputed world class University and perform as good as any graduate from an internationally reputed University both in higher studies and practice. The overall goal of the UOM therefore, is to produce academically sound , self confident, flexible, highly employable, internationally recognized quality graduates who are readily employable soon after the graduation, and also to train our students to become "job creators" rather than "job seekers" when they graduate.</p>
+                <p>The university has set several goals in order to be an active player in the economic development of our country while contributing to making Sri Lanka a "Knowledge Hub" by strategic planning and implementing many initiatives.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/images/gate.jpg" alt="University of Moratuwa Gate">
+            </div>
+        </div>
+    </section>
 
-<div id="contact">
-    <h1 class="title">Contact Us</h1>
-    <div id="link">
-        <div class="col">
-    <h2>More Links</h2>
-    <a href="https://uom.lk/vacancies">Vacancies</a>
-    <a href="https://uom.lk/procurements">Procurement</a>
-    <a href="https://uom.lk/policies">Policies</a>
-    <a href="https://uom.lk/about-site">Site Map</a>
-    <a href="https://uom.lk/telephone-directory">University Directory</a></div>
-    <div class="col">
-    <h2>Other Links</h2>
-    <a href="">CODL Programme</a>
-    <a href="http://codl.lk">CODL/BIT Programme</a>
-<a href="https://www.ugc.ac.lk">University Grants Commission</a>
-<a href="http://www.areyouready.uom.lk">Are You Ready</a>
-<a href="https://learn.ac.lk">LEARN</a>
-<a href="/general-catalogue">General Catalogue</a>
-<a href="/ahead">AHEAD Project</a>
-<a href="http://www.uniconsultancy.com">Uni Consultancy Services</a>
-<a href="http://itum.mrt.ac.lk">Institute of Technology, University of Moratuwa</a>
-<a href="/cites">Center of IT Services</a></div>
-</div>
-<div id="nl">
-<h2>Stay Tuned!</h2>
-<form>
-   
-    <input type='email' id="mail" placeholder="Enter your email">
-    <input type="submit" id="but" value="Submit" onclick="return validateForm()">
-    <h3 id="info"></h3>
-</form>
-<div id="social-icons">
-<a href="https://instagram.com/MoratuwaUni" target="_blank">
-<i class="fa-brands fa-instagram"></i></a>
-<a href="https://www.facebook.com/mrt.ac.lk" target="_blank">
-<i class="fa-brands fa-facebook"></i></a>
-<a href="https://twitter.com/MoratuwaUni" target="_blank">
-<i class="fa-brands fa-x-twitter"></i></a>
-<a href="https://lk.linkedin.com/school/university-of-moratuwa/" target="_blank">
-<i class="fa-brands fa-linkedin-in"></i></a>
-<a href="https://www.youtube.com/c/UniversityofMoratuwa" target="_blank">
-<i class="fa-brands fa-youtube"></i></a>
-<br>
-</div>
-</div>
-</div>
-<div id="footer">
-    <p>© 2026 DEV Sivo. All rights reserved.</p></div>  </div>
+    <footer id="contact">
+        <h1 class="title">Contact Us</h1>
+        <div class="contact-content">
+            <div id="link">
+                <div class="col">
+                    <h2>More Links</h2>
+                    <a href="https://uom.lk/vacancies">Vacancies</a>
+                    <a href="https://uom.lk/procurements">Procurement</a>
+                    <a href="https://uom.lk/policies">Policies</a>
+                    <a href="https://uom.lk/about-site">Site Map</a>
+                    <a href="https://uom.lk/telephone-directory">University Directory</a>
+                </div>
+                <div class="col">
+                    <h2>Other Links</h2>
+                    <a href="">CODL Programme</a>
+                    <a href="http://codl.lk">CODL/BIT Programme</a>
+                    <a href="https://www.ugc.ac.lk">University Grants Commission</a>
+                    <a href="http://www.areyouready.uom.lk">Are You Ready</a>
+                    <a href="https://learn.ac.lk">LEARN</a>
+                    <a href="/general-catalogue">General Catalogue</a>
+                    <a href="/ahead">AHEAD Project</a>
+                    <a href="http://www.uniconsultancy.com">Uni Consultancy Services</a>
+                    <a href="http://itum.mrt.ac.lk">Institute of Technology, University of Moratuwa</a>
+                    <a href="/cites">Center of IT Services</a>
+                </div>
+            </div>
+            <div id="nl">
+                <h2>Stay Tuned!</h2>
+                <form onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <input type="email" id="mail" placeholder="Enter your email">
+                        <input type="submit" id="but" value="Submit">
+                    </div>
+                    <h3 id="info"></h3>
+                </form>
+                <div id="social-icons">
+                    <a href="https://instagram.com/MoratuwaUni" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/mrt.ac.lk" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/MoratuwaUni" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://lk.linkedin.com/school/university-of-moratuwa/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/c/UniversityofMoratuwa" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>© 2026 DEV Sivo. All rights reserved.</p>
+        </div>
+    </footer>
 
-
-
-
-
-
-
-<script src="script.js"></script>
-
-
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>
